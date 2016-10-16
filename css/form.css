@@ -33,7 +33,6 @@
  * @copyright 2008-2010 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-
 div.form
 {
 }
@@ -43,6 +42,7 @@ div.form textarea,
 div.form select
 {
 	margin: 0.2em 0 0.5em 0;
+	margin-left: 15px
 }
 
 div.form fieldset
@@ -51,13 +51,6 @@ div.form fieldset
 	padding: 10px;
 	margin: 0 0 10px 0;
     -moz-border-radius:7px;
-}
-
-div.form label
-{
-	font-weight: bold;
-	font-size: 0.9em;
-	display: block;
 }
 
 div.form .row
@@ -82,7 +75,6 @@ div.form span.required
 	color: red;
 }
 
-div.form div.error label:first-child,
 div.form label.error,
 div.form span.error
 {
@@ -141,15 +133,6 @@ div.form .errorSummary ul
 {
 	margin: 0;
 	padding: 0 0 0 20px;
-}
-
-div.wide.form label
-{
-	float: left;
-	margin-right: 10px;
-	position: relative;
-	text-align: right;
-	width: 100px;
 }
 
 div.wide.form .row

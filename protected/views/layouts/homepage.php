@@ -5,7 +5,7 @@
 <head>
         
         <!-- Title -->
-        <title>CRUD | Just Simple Crud Ajax</title>
+        <title>BeCharming | Halaman Administration</title>
         
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta charset="UTF-8">
@@ -15,28 +15,31 @@
         
         <!-- Styles -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/uniform/css/uniform.default.min.css" rel="stylesheet"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css"/>	
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css"/>	
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/waves/waves.min.css" rel="stylesheet" type="text/css"/>	
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css"/>	
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet" type="text/css"/>	
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/metrojs/MetroJs.min.css" rel="stylesheet" type="text/css"/>	
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css"/>	
-        	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/uniform/css/uniform.default.min.css" rel="stylesheet"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css"/>	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css"/>	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/waves/waves.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css"/>	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/metrojs/MetroJs.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/toastr/toastr.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/datatables/css/jquery.datatables.min.css" rel="stylesheet" type="text/css"/> 
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/datatables/css/jquery.datatables_themeroller.css" rel="stylesheet" type="text/css"/> 	
         <!-- Theme Styles -->
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/css/modern.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/css/themes/white.css" class="theme-color" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/css/modern.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/css/themes/white.css" class="theme-color" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/css/custom.css" rel="stylesheet" type="text/css"/>
         
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/3d-bold-navigation/js/modernizr.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/3d-bold-navigation/js/modernizr.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/select2/css/select2.min.css" rel="stylesheet" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+        <link href="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/summernote-master/summernote.css" rel="stylesheet" type="text/css"/>
+       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -48,7 +51,7 @@
         <div class="overlay"></div>
         <div class="menu-wrap">
             <nav class="profile-menu">
-                <div class="profile"><img src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/images/avatar1.png" width="52px" alt="Tioreza"/><span>Tioreza</span></div>
+                <div class="profile"><img src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/images/avatar1.png" width="52px" alt="Tioreza"/><span><?php echo Yii::app()->user->username;?></span></div>
                 <div class="profile-menu-list">
                     <a href="#"><i class="fa fa-star"></i><span>Favorites</span></a>
                     <a href="#"><i class="fa fa-bell"></i><span>Alerts</span></a>
@@ -75,7 +78,7 @@
                         </a>
                     </div>
                     <div class="logo-box">
-                        <a href="index.html" class="logo-text"><span>Yii1</span></a>
+                        <a href="index.html" class="logo-text"><span>Be Charming</span></a>
                     </div><!-- Logo Box -->
                     <div class="search-button">
                         <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -174,12 +177,12 @@
                              
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
-                                        <span class="user-name">Tio</span>
-                                        <img class="img-circle avatar" src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/images/avatar1.png" width="40" height="40" alt="">
+                                        <span class="user-name"><?php echo Yii::app()->user->username;?></span>
+                                        <img class="img-circle avatar" src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/frontend/images/user_female.jpg" width="30" height="30" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html" class="log-out waves-effect waves-button waves-classic">
+                                    <a href="<?php echo $this->createUrl("admin/logout");?>" class="log-out waves-effect waves-button waves-classic">
                                         <span><i class="fa fa-sign-out m-r-xs"></i>Log out</span>
                                     </a>
                                 </li>
@@ -194,26 +197,35 @@
                         <div class="sidebar-profile">
                             <a href="javascript:void(0);" id="profile-menu-link">
                                 <div class="sidebar-profile-image">
-                                    <img src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/images/avatar1.png" class="img-circle img-responsive" alt="">
+                                    <img src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/frontend/images/user_female.jpg" class="img-circle img-responsive" alt="">
                                 </div>
                                 <div class="sidebar-profile-details">
-                                    <span>Tioreza<br><small>Programer</small></span>
+                                    <span><?php echo Yii::app()->user->username;?><br><small><?php echo Yii::app()->user->rule;?></small></span>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <ul class="menu accordion-menu">
-                        <li class="active"><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
+                        <li class="active"><a href="<?php echo $this->createUrl('/');?>" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Home</p></a></li>
+                        <li><a href="<?php echo $this->createUrl('category/admin');?>" class="waves-effect waves-button"><span class="menu-icon fa fa-newspaper-o"></span><p>Category</p></a></li>
+                        <li><a href="<?php echo $this->createUrl('product/admin');?>" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-list-alt"></span><p>Product</p></a></li>
+                        <li><a href="<?php echo $this->createUrl('banner/admin');?>" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-list-alt"></span><p>Banner</p></a></li>
+                        <li><a href="<?php echo $this->createUrl('orders/admin');?>" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-shopping-cart"></span><p>Orders</p></a></li>
+                        <li><a href="<?php echo $this->createUrl('member/admin');?>" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon glyphicon-user"></span><p>Member</p></a></li>
+                        <li><a href="<?php echo $this->createUrl('contact/admin');?>" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-list-alt"></span><p>Message</p></a></li>
                     </ul>
                 </div><!-- Page Sidebar Inner -->
             </div><!-- Page Sidebar -->
             <div class="page-inner">
                 <div class="page-title">
-                    <h3>Dashboard</h3>
+                    <h3>Halaman Admin</h3>
                     <div class="page-breadcrumb">
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active">Dashboard</li>
+                        <ol class="breadcrumb"><!--jika $breadcrumbs tersedia maka-->
+                        <?php if(isset($this->breadcrumbs)):?>
+                        <!--tampilkan breadcrumbs-->
+                        <?php $this -> widget('zii.widgets.CBreadcrumbs', array('links' => $this -> breadcrumbs, )); ?>
+                        <!--end if-->
+                        <?php endif ?>
                         </ol>
                     </div>
                 </div>
@@ -285,29 +297,33 @@
 	
 
         <!-- Javascripts -->
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/jquery/jquery-2.1.3.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/pace-master/pace.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/jquery-blockui/jquery.blockui.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/switchery/switchery.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/uniform/jquery.uniform.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/offcanvasmenueffects/js/classie.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/offcanvasmenueffects/js/main.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/waves/waves.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/3d-bold-navigation/js/main.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/waypoints/jquery.waypoints.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/jquery-counterup/jquery.counterup.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/toastr/toastr.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/flot/jquery.flot.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/flot/jquery.flot.time.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/flot/jquery.flot.symbol.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/flot/jquery.flot.resize.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/flot/jquery.flot.tooltip.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/curvedlines/curvedLines.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/plugins/metrojs/MetroJs.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/js/modern.min.js"></script>
+
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/pace-master/pace.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/switchery/switchery.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/uniform/jquery.uniform.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/offcanvasmenueffects/js/main.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/waves/waves.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/3d-bold-navigation/js/main.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/jquery-counterup/jquery.counterup.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/toastr/toastr.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/flot/jquery.flot.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/flot/jquery.flot.symbol.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/curvedlines/curvedLines.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/metrojs/MetroJs.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/js/modern.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/select2/js/select2.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/js/pages/form-select2.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/plugins/summernote-master/summernote.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl;?>/assets/theme/backend/js/pages/form-elements.js"></script>
 
         
     </body>

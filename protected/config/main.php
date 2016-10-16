@@ -8,7 +8,8 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
-	'defaultController'=>'page',
+	'defaultController'=>'product',
+
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -33,6 +34,10 @@ return array(
 
 	// application components
 	'components'=>array(
+		'image'=>array(
+				'class'=>'application.extensions.image.CImageComponent',
+				'driver'=>'GD',
+		),
 
 		'user'=>array(
 			// enable cookie-based authentication
@@ -45,10 +50,16 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'caseSensitive'=>false,
+			//'urlSuffix'=>'.html',
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+
+				'<controller:\w+>/<action:\w+>/<id:\d+>/<c:\w+>'=>'<controller>/<action>',
+				'<controller:\w+>/<id:\d+>/<p>'=>'<controller>/detail',
+
+
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+
 			),
 		),
 		
@@ -58,7 +69,7 @@ return array(
 		'db'=>require(dirname(__FILE__).'/database.php'),
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=yiinigo',
+			'connectionString' => 'mysql:host=localhost;dbname=tio_yiishop',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
@@ -67,7 +78,7 @@ return array(
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
-			'errorAction'=>'site/error',
+			'errorAction'=>'system/error',
 		),
 
 		'log'=>array(
