@@ -1,2 +1,2 @@
-# Crud-Ajax-Yii1
-Simpe Crud Ajax with Yii1
+# Becharming Fashion
+Proyek ini saya buat untuk mempelajari lebih dalam mengenai framework php yaitu yii-1.
